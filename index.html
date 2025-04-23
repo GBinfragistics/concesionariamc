@@ -34,9 +34,11 @@
   display: block;
   margin: 1em auto;
 }
-    .content {
+.mapa {
   content-visibility: auto;
+  contain-intrinsic-size: 750px 600px; /* Ayuda a reservar espacio y evitar layout shifts */
 }
+
   </style>
 </head>
 <body>
@@ -54,7 +56,7 @@
   <p>Los usuarios que ingresen desde <strong>Madden (km 13)</strong> con dirección a Cuatro Altos podrán transitar con normalidad.</p>
   
   <img
-  class="content"
+  class="mapa"
   src="mapa-600.webp"
   srcset="mapa.webp 2x"
   alt="Mapa del corte de ruta"
